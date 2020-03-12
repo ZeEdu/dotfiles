@@ -64,7 +64,6 @@ set number
 set numberwidth=5
 set relativenumber
 set ruler
-set signcolumn=no
 
 " Busca:
 set hlsearch
@@ -79,24 +78,27 @@ let g:ale_warn_about_trailing_whitespace = 0
 let g:ale_linters = {
       \  'javascript': ['eslint'],
       \  'typescript': ['tslint'],
-      \  'cs': ['OmniSharp']
       \}
 let g:ale_fixers = {
  \ 'javascript': ['eslint']
  \ }
 let g:ale_javascript_prettier_use_local_config = 1
-let g:ale_fix_on_save = 1
 let g:ale_echo_msg_error_str = nr2char(0xf421) . ' '
 let g:ale_echo_msg_warning_str = nr2char(0xf420) . ' '
 let g:ale_echo_msg_info_str = nr2char(0xf05a) . ' '
 let g:ale_echo_msg_format = '%severity%  %linter% - %s'
 let g:ale_sign_column_always = 1
-let g:ale_sign_error = g:ale_echo_msg_error_str
-let g:ale_sign_warning = g:ale_echo_msg_warning_str
-let g:ale_statusline_format = [
-      \ g:ale_echo_msg_error_str . ' %d',
-      \ g:ale_echo_msg_warning_str . ' %d',
-      \ nr2char(0xf4a1) . '  ']
+let g:ale_sign_error = '>>'
+let g:ale_sign_warning = '--'
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
+let g:ale_open_list = 1
+let g:ale_keep_list_window_open = 1
+
+" let g:ale_statusline_format = [
+"       \ g:ale_echo_msg_error_str . ' %d',
+"       \ g:ale_echo_msg_warning_str . ' %d',
+"       \ nr2char(0xf4a1) . '  ']
 
 " Desabilitar backups:
 set nobackup
@@ -123,7 +125,7 @@ let g:yats_host_keyword = 1
 
 " Airline
 let g:airline_theme='base16'
-let g:airline#extensions#ale#enabled = 1
+let g:airline#extensions#ale#enabled = 0
 
 
 nnoremap <silent> <Leader><Leader> :Files<CR>
