@@ -1,0 +1,78 @@
+{
+	"window.menuBarVisibility": "hidden",
+	"editor.fontFamily": "Input Mono, Monaco, 'Courier New', monospace",
+	"editor.fontLigatures": false,
+	"editor.fontSize": 16,
+	"editor.lineHeight": 24,
+	"editor.renderLineHighlight": "gutter",
+	"editor.formatOnSave": true,
+	"editor.wordWrap": "on",
+	"editor.detectIndentation": false,
+	"editor.tabSize": 2,
+	"editor.insertSpaces": false,
+	"workbench.startupEditor": "newUntitledFile",
+	"workbench.activityBar.visible": false,
+	"explorer.confirmDragAndDrop": false,
+	"diffEditor.renderSideBySide": true,
+	"editor.colorDecorators": false,
+	"editor.autoClosingBrackets": "always",
+	"editor.autoClosingQuotes": "always",
+	"editor.minimap.renderCharacters": false,
+	"breadcrumbs.enabled": false,
+	"telemetry.enableCrashReporter": false,
+	"telemetry.enableTelemetry": false,
+	"workbench.statusBar.visible": true,
+	"editor.acceptSuggestionOnCommitCharacter": false,
+	"editor.wordBasedSuggestions": false,
+	"editor.suggestSelection": "first",
+	"explorer.confirmDelete": false,
+	"[javascriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"explorer.sortOrder": "type",
+	"window.title": "${activeEditorMedium}${separator}${rootName}",
+	"files.exclude": {
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/node_modules": true,
+		"**/.firebase": true
+	},
+	"files.watcherExclude": {
+		"**/.git/objects/**": true,
+		"**/.git/subtree-cache/**": true,
+		"**/node_modules/*/**": true,
+		"**/.git": true,
+		"**/.svn": true,
+		"**/.hg": true,
+		"**/CVS": true,
+		"**/.DS_Store": true,
+		"**/node_modules": true,
+		"**/.firebase": true
+	},
+	"git.autofetch": true,
+	"terminal.integrated.shell.linux": "/bin/zsh",
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.fontFamily": "'Menlo for Powerline', 'PowerlineSymbols'",
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"workbench.iconTheme": "material-icon-theme",
+	"window.zoomLevel": 0,
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"workbench.colorTheme": "Default Light+",
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"editor.suggest.showWords": false,
+	"editor.suggest.showKeywords": false,
+	"liveServer.settings.donotShowInfoMsg": true
+}
